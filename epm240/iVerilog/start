@@ -1,0 +1,15 @@
+#!/bin/sh
+# Компиллируем и стартуем симуляцию
+clear
+echo СБОРКА ДЛЯ СИМУЛЯЦИИ
+iverilog -o qqq counter.v tcounter.v
+
+echo симуляция iVerilog VVP
+vvp qqq
+
+echo симуляция GTKWAVE 
+gtkwave out.vcd
+
+echo
+echo ---END---
+read a
