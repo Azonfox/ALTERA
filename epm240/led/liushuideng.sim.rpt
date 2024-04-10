@@ -1,0 +1,285 @@
+Simulator report for liushuideng
+Sun Jul 03 19:08:46 2022
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 52 nodes     ;
+; Simulation Coverage         ;      17.39 % ;
+; Total Number of Transitions ; 3350         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; MAX II       ;
+; Device                      ; EPM240T100C5 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      17.39 % ;
+; Total nodes checked                                 ; 52           ;
+; Total output ports checked                          ; 69           ;
+; Total output ports with complete 1/0-value coverage ; 12           ;
+; Total output ports with no 1/0-value coverage       ; 55           ;
+; Total output ports with no 1-value coverage         ; 56           ;
+; Total output ports with no 0-value coverage         ; 56           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                 ;
++------------------------+---------------------------------+------------------+
+; Node Name              ; Output Port Name                ; Output Port Type ;
++------------------------+---------------------------------+------------------+
+; |shandeng|\P1:count[0] ; |shandeng|\P1:count[0]~1        ; cout0            ;
+; |shandeng|\P1:count[0] ; |shandeng|\P1:count[0]~1COUT1_5 ; cout1            ;
+; |shandeng|\P1:count[1] ; |shandeng|\P1:count[1]~1        ; cout             ;
+; |shandeng|\P1:count[2] ; |shandeng|\P1:count[2]~1        ; cout0            ;
+; |shandeng|\P1:count[3] ; |shandeng|\P1:count[3]~1        ; cout0            ;
+; |shandeng|P1~2         ; |shandeng|P1~2                  ; combout          ;
+; |shandeng|\P1:count[4] ; |shandeng|\P1:count[4]~1        ; cout0            ;
+; |shandeng|\P1:count[5] ; |shandeng|\P1:count[5]~1        ; cout0            ;
+; |shandeng|\P1:count[6] ; |shandeng|\P1:count[6]~1        ; cout             ;
+; |shandeng|P1~3         ; |shandeng|P1~3                  ; combout          ;
+; |shandeng|P1~5         ; |shandeng|P1~5                  ; combout          ;
+; |shandeng|clk          ; |shandeng|clk~corein            ; combout          ;
++------------------------+---------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                        ;
++---------------------------+----------------------------------+------------------+
+; Node Name                 ; Output Port Name                 ; Output Port Type ;
++---------------------------+----------------------------------+------------------+
+; |shandeng|\P1:count[23]   ; |shandeng|\P1:count[23]~1        ; cout0            ;
+; |shandeng|\P1:count[23]   ; |shandeng|\P1:count[23]~1COUT1_5 ; cout1            ;
+; |shandeng|\P1:count[21]   ; |shandeng|\P1:count[21]~1        ; cout             ;
+; |shandeng|\P1:count[22]   ; |shandeng|\P1:count[22]~1        ; cout0            ;
+; |shandeng|\P1:count[22]   ; |shandeng|\P1:count[22]~1COUT1_5 ; cout1            ;
+; |shandeng|LessThan0~0     ; |shandeng|LessThan0~0            ; combout          ;
+; |shandeng|\P1:count[20]   ; |shandeng|\P1:count[20]~1        ; cout0            ;
+; |shandeng|\P1:count[20]   ; |shandeng|\P1:count[20]~1COUT1_5 ; cout1            ;
+; |shandeng|\P1:count[19]   ; |shandeng|\P1:count[19]~1        ; cout0            ;
+; |shandeng|\P1:count[19]   ; |shandeng|\P1:count[19]~1COUT1_5 ; cout1            ;
+; |shandeng|LessThan0~1     ; |shandeng|LessThan0~1            ; combout          ;
+; |shandeng|\P1:count[15]   ; |shandeng|\P1:count[15]~1        ; cout0            ;
+; |shandeng|\P1:count[15]   ; |shandeng|\P1:count[15]~1COUT1_5 ; cout1            ;
+; |shandeng|\P1:count[13]   ; |shandeng|\P1:count[13]~1        ; cout0            ;
+; |shandeng|\P1:count[13]   ; |shandeng|\P1:count[13]~1COUT1_5 ; cout1            ;
+; |shandeng|\P1:count[14]   ; |shandeng|\P1:count[14]~1        ; cout0            ;
+; |shandeng|\P1:count[14]   ; |shandeng|\P1:count[14]~1COUT1_5 ; cout1            ;
+; |shandeng|\P1:count[11]   ; |shandeng|\P1:count[11]~1        ; cout             ;
+; |shandeng|\P1:count[12]   ; |shandeng|\P1:count[12]~1        ; cout0            ;
+; |shandeng|\P1:count[12]   ; |shandeng|\P1:count[12]~1COUT1_5 ; cout1            ;
+; |shandeng|LessThan0~2     ; |shandeng|LessThan0~2            ; combout          ;
+; |shandeng|\P1:count[9]    ; |shandeng|\P1:count[9]~1         ; cout0            ;
+; |shandeng|\P1:count[9]    ; |shandeng|\P1:count[9]~1COUT1_5  ; cout1            ;
+; |shandeng|\P1:count[10]   ; |shandeng|\P1:count[10]~1        ; cout0            ;
+; |shandeng|\P1:count[10]   ; |shandeng|\P1:count[10]~1COUT1_5 ; cout1            ;
+; |shandeng|\P1:count[7]    ; |shandeng|\P1:count[7]~1         ; cout0            ;
+; |shandeng|\P1:count[7]    ; |shandeng|\P1:count[7]~1COUT1_5  ; cout1            ;
+; |shandeng|\P1:count[8]    ; |shandeng|\P1:count[8]~1         ; cout0            ;
+; |shandeng|\P1:count[8]    ; |shandeng|\P1:count[8]~1COUT1_5  ; cout1            ;
+; |shandeng|LessThan0~3     ; |shandeng|LessThan0~3            ; combout          ;
+; |shandeng|LessThan0~4     ; |shandeng|LessThan0~4            ; combout          ;
+; |shandeng|\P1:count[16]   ; |shandeng|\P1:count[16]~1        ; cout             ;
+; |shandeng|\P1:count[17]   ; |shandeng|\P1:count[17]~1        ; cout0            ;
+; |shandeng|\P1:count[17]   ; |shandeng|\P1:count[17]~1COUT1_5 ; cout1            ;
+; |shandeng|\P1:count[18]   ; |shandeng|\P1:count[18]~1        ; cout0            ;
+; |shandeng|\P1:count[18]   ; |shandeng|\P1:count[18]~1COUT1_5 ; cout1            ;
+; |shandeng|P1~0            ; |shandeng|P1~0                   ; combout          ;
+; |shandeng|LessThan0~5     ; |shandeng|LessThan0~5            ; combout          ;
+; |shandeng|P1~1            ; |shandeng|P1~1                   ; combout          ;
+; |shandeng|\P1:count[2]    ; |shandeng|\P1:count[2]~1COUT1_5  ; cout1            ;
+; |shandeng|\P1:count[3]    ; |shandeng|\P1:count[3]~1COUT1_5  ; cout1            ;
+; |shandeng|\P1:count[4]    ; |shandeng|\P1:count[4]~1COUT1_5  ; cout1            ;
+; |shandeng|\P1:count[5]    ; |shandeng|\P1:count[5]~1COUT1_5  ; cout1            ;
+; |shandeng|P1~6            ; |shandeng|P1~6                   ; combout          ;
+; |shandeng|P1~7            ; |shandeng|P1~7                   ; combout          ;
+; |shandeng|P1~8            ; |shandeng|P1~8                   ; combout          ;
+; |shandeng|P1~9            ; |shandeng|P1~9                   ; combout          ;
+; |shandeng|P1~10           ; |shandeng|P1~10                  ; combout          ;
+; |shandeng|P1~11           ; |shandeng|P1~11                  ; combout          ;
+; |shandeng|P1~12           ; |shandeng|P1~12                  ; combout          ;
+; |shandeng|P1~13           ; |shandeng|P1~13                  ; combout          ;
+; |shandeng|P1~14           ; |shandeng|P1~14                  ; combout          ;
+; |shandeng|P1~15           ; |shandeng|P1~15                  ; combout          ;
+; |shandeng|P1~16           ; |shandeng|P1~16                  ; combout          ;
+; |shandeng|\P1:count[24]~2 ; |shandeng|\P1:count[24]~2        ; combout          ;
+; |shandeng|led             ; |shandeng|led                    ; padio            ;
++---------------------------+----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++---------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                        ;
++---------------------------+----------------------------------+------------------+
+; Node Name                 ; Output Port Name                 ; Output Port Type ;
++---------------------------+----------------------------------+------------------+
+; |shandeng|\P1:count[23]   ; |shandeng|\P1:count[23]~1        ; cout0            ;
+; |shandeng|\P1:count[23]   ; |shandeng|\P1:count[23]~1COUT1_5 ; cout1            ;
+; |shandeng|\P1:count[21]   ; |shandeng|\P1:count[21]~1        ; cout             ;
+; |shandeng|\P1:count[22]   ; |shandeng|\P1:count[22]~1        ; cout0            ;
+; |shandeng|\P1:count[22]   ; |shandeng|\P1:count[22]~1COUT1_5 ; cout1            ;
+; |shandeng|LessThan0~0     ; |shandeng|LessThan0~0            ; combout          ;
+; |shandeng|\P1:count[20]   ; |shandeng|\P1:count[20]~1        ; cout0            ;
+; |shandeng|\P1:count[20]   ; |shandeng|\P1:count[20]~1COUT1_5 ; cout1            ;
+; |shandeng|\P1:count[19]   ; |shandeng|\P1:count[19]~1        ; cout0            ;
+; |shandeng|\P1:count[19]   ; |shandeng|\P1:count[19]~1COUT1_5 ; cout1            ;
+; |shandeng|LessThan0~1     ; |shandeng|LessThan0~1            ; combout          ;
+; |shandeng|\P1:count[15]   ; |shandeng|\P1:count[15]~1        ; cout0            ;
+; |shandeng|\P1:count[15]   ; |shandeng|\P1:count[15]~1COUT1_5 ; cout1            ;
+; |shandeng|\P1:count[13]   ; |shandeng|\P1:count[13]~1        ; cout0            ;
+; |shandeng|\P1:count[13]   ; |shandeng|\P1:count[13]~1COUT1_5 ; cout1            ;
+; |shandeng|\P1:count[14]   ; |shandeng|\P1:count[14]~1        ; cout0            ;
+; |shandeng|\P1:count[14]   ; |shandeng|\P1:count[14]~1COUT1_5 ; cout1            ;
+; |shandeng|\P1:count[11]   ; |shandeng|\P1:count[11]~1        ; cout             ;
+; |shandeng|\P1:count[12]   ; |shandeng|\P1:count[12]~1        ; cout0            ;
+; |shandeng|\P1:count[12]   ; |shandeng|\P1:count[12]~1COUT1_5 ; cout1            ;
+; |shandeng|LessThan0~2     ; |shandeng|LessThan0~2            ; combout          ;
+; |shandeng|\P1:count[9]    ; |shandeng|\P1:count[9]~1         ; cout0            ;
+; |shandeng|\P1:count[9]    ; |shandeng|\P1:count[9]~1COUT1_5  ; cout1            ;
+; |shandeng|\P1:count[10]   ; |shandeng|\P1:count[10]~1        ; cout0            ;
+; |shandeng|\P1:count[10]   ; |shandeng|\P1:count[10]~1COUT1_5 ; cout1            ;
+; |shandeng|\P1:count[7]    ; |shandeng|\P1:count[7]~1         ; cout0            ;
+; |shandeng|\P1:count[8]    ; |shandeng|\P1:count[8]~1         ; cout0            ;
+; |shandeng|\P1:count[8]    ; |shandeng|\P1:count[8]~1COUT1_5  ; cout1            ;
+; |shandeng|LessThan0~3     ; |shandeng|LessThan0~3            ; combout          ;
+; |shandeng|LessThan0~4     ; |shandeng|LessThan0~4            ; combout          ;
+; |shandeng|\P1:count[16]   ; |shandeng|\P1:count[16]~1        ; cout             ;
+; |shandeng|\P1:count[17]   ; |shandeng|\P1:count[17]~1        ; cout0            ;
+; |shandeng|\P1:count[17]   ; |shandeng|\P1:count[17]~1COUT1_5 ; cout1            ;
+; |shandeng|\P1:count[18]   ; |shandeng|\P1:count[18]~1        ; cout0            ;
+; |shandeng|\P1:count[18]   ; |shandeng|\P1:count[18]~1COUT1_5 ; cout1            ;
+; |shandeng|P1~0            ; |shandeng|P1~0                   ; combout          ;
+; |shandeng|LessThan0~5     ; |shandeng|LessThan0~5            ; combout          ;
+; |shandeng|P1~1            ; |shandeng|P1~1                   ; combout          ;
+; |shandeng|\P1:count[2]    ; |shandeng|\P1:count[2]~1COUT1_5  ; cout1            ;
+; |shandeng|\P1:count[3]    ; |shandeng|\P1:count[3]~1COUT1_5  ; cout1            ;
+; |shandeng|\P1:count[4]    ; |shandeng|\P1:count[4]~1COUT1_5  ; cout1            ;
+; |shandeng|\P1:count[5]    ; |shandeng|\P1:count[5]~1COUT1_5  ; cout1            ;
+; |shandeng|P1~4            ; |shandeng|P1~4                   ; combout          ;
+; |shandeng|P1~6            ; |shandeng|P1~6                   ; combout          ;
+; |shandeng|P1~7            ; |shandeng|P1~7                   ; combout          ;
+; |shandeng|P1~8            ; |shandeng|P1~8                   ; combout          ;
+; |shandeng|P1~9            ; |shandeng|P1~9                   ; combout          ;
+; |shandeng|P1~10           ; |shandeng|P1~10                  ; combout          ;
+; |shandeng|P1~11           ; |shandeng|P1~11                  ; combout          ;
+; |shandeng|P1~12           ; |shandeng|P1~12                  ; combout          ;
+; |shandeng|P1~13           ; |shandeng|P1~13                  ; combout          ;
+; |shandeng|P1~14           ; |shandeng|P1~14                  ; combout          ;
+; |shandeng|P1~15           ; |shandeng|P1~15                  ; combout          ;
+; |shandeng|P1~16           ; |shandeng|P1~16                  ; combout          ;
+; |shandeng|\P1:count[24]~2 ; |shandeng|\P1:count[24]~2        ; combout          ;
+; |shandeng|led             ; |shandeng|led                    ; padio            ;
++---------------------------+----------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Jul 03 19:08:45 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off liushuideng -c liushuideng
+Info: Using vector source file "C:/altera/EPM240/LED/liushuideng.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      17.39 %
+Info: Number of transitions in simulation is 3350
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 134 megabytes
+    Info: Processing ended: Sun Jul 03 19:08:46 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

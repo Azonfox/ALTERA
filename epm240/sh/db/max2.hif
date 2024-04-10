@@ -1,0 +1,131 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+45
+3366
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+MAX2
+# storage
+db|MAX2.(0).cnf
+db|MAX2.(0).cnf
+# case_insensitive
+# source_file
+max2.bdf
+9cfd3947e5b5f41561318c581fffa3b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+74393
+# storage
+db|MAX2.(1).cnf
+db|MAX2.(1).cnf
+# case_insensitive
+# source_file
+|altera|91sp2|quartus|libraries|others|maxplus2|74393.bdf
+19d73a54454fbcd7f4a5bbc04b4bf833
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74393:inst16
+74393:inst15
+74393:inst12
+}
+# macro_sequence
+
+# end
+# entity
+ALTUFM_OSC
+# storage
+db|MAX2.(2).cnf
+db|MAX2.(2).cnf
+# case_insensitive
+# source_file
+|altera|91sp2|quartus|libraries|megafunctions|altufm_osc.tdf
+69b7b7ad18c21dd39f2887c43542cf72
+7
+# user_parameter {
+OSC_FREQUENCY
+180000
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+altufm_osc_b12
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+osc
+-1
+3
+oscena
+-1
+2
+}
+# hierarchies {
+altufm_osc:inst13
+}
+# macro_sequence
+
+# end
+# entity
+altufm_osc_b12
+# storage
+db|MAX2.(3).cnf
+db|MAX2.(3).cnf
+# case_insensitive
+# source_file
+db|altufm_osc_b12.tdf
+24282463b0fe8facc5e426261135dd
+7
+# used_port {
+oscena
+-1
+3
+osc
+-1
+3
+}
+# include_file {
+maxii_ufm.inc
+44b2668eaa16fcccb5cd5b15a07f3
+}
+# memory_file {
+none
+0
+}
+# hierarchies {
+altufm_osc:inst13|altufm_osc_b12:auto_generated
+}
+# macro_sequence
+
+# end
+# complete
+

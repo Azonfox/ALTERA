@@ -1,0 +1,338 @@
+Simulator report for V1
+Tue Jul 12 17:41:11 2022
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 65 nodes     ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; MAX II       ;
+; Device                      ; EPM240T100C5 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 65           ;
+; Total output ports checked                          ; 89           ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 89           ;
+; Total output ports with no 1-value coverage         ; 89           ;
+; Total output ports with no 0-value coverage         ; 89           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------+
+; Missing 1-Value Coverage                                       ;
++-----------------+---------------------------+------------------+
+; Node Name       ; Output Port Name          ; Output Port Type ;
++-----------------+---------------------------+------------------+
+; |V1|led~reg0    ; |V1|led~reg0              ; regout           ;
+; |V1|count[30]   ; |V1|count[30]~1           ; cout             ;
+; |V1|count[24]   ; |V1|count[24]~3           ; cout0            ;
+; |V1|count[24]   ; |V1|count[24]~3COUT1_133  ; cout1            ;
+; |V1|count[23]   ; |V1|count[23]~5           ; cout0            ;
+; |V1|count[23]   ; |V1|count[23]~5COUT1_131  ; cout1            ;
+; |V1|count[25]   ; |V1|count[25]~7           ; cout             ;
+; |V1|count[26]   ; |V1|count[26]~9           ; cout0            ;
+; |V1|count[26]   ; |V1|count[26]~9COUT1_135  ; cout1            ;
+; |V1|led~0       ; |V1|led~0                 ; combout          ;
+; |V1|count[29]   ; |V1|count[29]~11          ; cout0            ;
+; |V1|count[29]   ; |V1|count[29]~11COUT1_141 ; cout1            ;
+; |V1|count[27]   ; |V1|count[27]~13          ; cout0            ;
+; |V1|count[27]   ; |V1|count[27]~13COUT1_137 ; cout1            ;
+; |V1|count[28]   ; |V1|count[28]~15          ; cout0            ;
+; |V1|count[28]   ; |V1|count[28]~15COUT1_139 ; cout1            ;
+; |V1|led~1       ; |V1|led~1                 ; combout          ;
+; |V1|count[21]   ; |V1|count[21]~17          ; cout0            ;
+; |V1|count[21]   ; |V1|count[21]~17COUT1_127 ; cout1            ;
+; |V1|count[22]   ; |V1|count[22]~19          ; cout0            ;
+; |V1|count[22]   ; |V1|count[22]~19COUT1_129 ; cout1            ;
+; |V1|count[19]   ; |V1|count[19]~21          ; cout0            ;
+; |V1|count[19]   ; |V1|count[19]~21COUT1_125 ; cout1            ;
+; |V1|count[20]   ; |V1|count[20]~23          ; cout             ;
+; |V1|count[16]   ; |V1|count[16]~25          ; cout0            ;
+; |V1|count[16]   ; |V1|count[16]~25COUT1_119 ; cout1            ;
+; |V1|count[17]   ; |V1|count[17]~27          ; cout0            ;
+; |V1|count[17]   ; |V1|count[17]~27COUT1_121 ; cout1            ;
+; |V1|count[18]   ; |V1|count[18]~29          ; cout0            ;
+; |V1|count[18]   ; |V1|count[18]~29COUT1_123 ; cout1            ;
+; |V1|LessThan1~0 ; |V1|LessThan1~0           ; combout          ;
+; |V1|count[12]   ; |V1|count[12]~31          ; cout0            ;
+; |V1|count[12]   ; |V1|count[12]~31COUT1_113 ; cout1            ;
+; |V1|count[9]    ; |V1|count[9]~33           ; cout0            ;
+; |V1|count[9]    ; |V1|count[9]~33COUT1_109  ; cout1            ;
+; |V1|count[10]   ; |V1|count[10]~35          ; cout             ;
+; |V1|count[7]    ; |V1|count[7]~37           ; cout0            ;
+; |V1|count[7]    ; |V1|count[7]~37COUT1_105  ; cout1            ;
+; |V1|count[8]    ; |V1|count[8]~39           ; cout0            ;
+; |V1|count[8]    ; |V1|count[8]~39COUT1_107  ; cout1            ;
+; |V1|LessThan0~0 ; |V1|LessThan0~0           ; combout          ;
+; |V1|count[11]   ; |V1|count[11]~41          ; cout0            ;
+; |V1|count[11]   ; |V1|count[11]~41COUT1_111 ; cout1            ;
+; |V1|count[13]   ; |V1|count[13]~43          ; cout0            ;
+; |V1|count[13]   ; |V1|count[13]~43COUT1_115 ; cout1            ;
+; |V1|count[14]   ; |V1|count[14]~45          ; cout0            ;
+; |V1|count[14]   ; |V1|count[14]~45COUT1_117 ; cout1            ;
+; |V1|LessThan1~1 ; |V1|LessThan1~1           ; combout          ;
+; |V1|LessThan0~1 ; |V1|LessThan0~1           ; combout          ;
+; |V1|count[15]   ; |V1|count[15]~47          ; cout             ;
+; |V1|LessThan0~2 ; |V1|LessThan0~2           ; combout          ;
+; |V1|LessThan0~3 ; |V1|LessThan0~3           ; combout          ;
+; |V1|LessThan0~4 ; |V1|LessThan0~4           ; combout          ;
+; |V1|count[31]   ; |V1|count[31]             ; regout           ;
+; |V1|led~2       ; |V1|led~2                 ; combout          ;
+; |V1|count~50    ; |V1|count~50              ; combout          ;
+; |V1|count~51    ; |V1|count~51              ; combout          ;
+; |V1|count~52    ; |V1|count~52              ; combout          ;
+; |V1|LessThan2~0 ; |V1|LessThan2~0           ; combout          ;
+; |V1|LessThan2~1 ; |V1|LessThan2~1           ; combout          ;
+; |V1|LessThan2~2 ; |V1|LessThan2~2           ; combout          ;
+; |V1|LessThan2~3 ; |V1|LessThan2~3           ; combout          ;
+; |V1|count[0]    ; |V1|count[0]~54           ; cout             ;
+; |V1|count[1]    ; |V1|count[1]~56           ; cout0            ;
+; |V1|count[1]    ; |V1|count[1]~56COUT1_95   ; cout1            ;
+; |V1|count[2]    ; |V1|count[2]~58           ; cout0            ;
+; |V1|count[2]    ; |V1|count[2]~58COUT1_97   ; cout1            ;
+; |V1|count[3]    ; |V1|count[3]~60           ; cout0            ;
+; |V1|count[3]    ; |V1|count[3]~60COUT1_99   ; cout1            ;
+; |V1|LessThan2~4 ; |V1|LessThan2~4           ; combout          ;
+; |V1|count[4]    ; |V1|count[4]~62           ; cout0            ;
+; |V1|count[4]    ; |V1|count[4]~62COUT1_101  ; cout1            ;
+; |V1|count[5]    ; |V1|count[5]~64           ; cout             ;
+; |V1|count[6]    ; |V1|count[6]~66           ; cout0            ;
+; |V1|count[6]    ; |V1|count[6]~66COUT1_103  ; cout1            ;
+; |V1|LessThan2~5 ; |V1|LessThan2~5           ; combout          ;
+; |V1|LessThan2~6 ; |V1|LessThan2~6           ; combout          ;
+; |V1|LessThan2~7 ; |V1|LessThan2~7           ; combout          ;
+; |V1|LessThan2~8 ; |V1|LessThan2~8           ; combout          ;
+; |V1|LessThan1~2 ; |V1|LessThan1~2           ; combout          ;
+; |V1|LessThan1~3 ; |V1|LessThan1~3           ; combout          ;
+; |V1|LessThan1~4 ; |V1|LessThan1~4           ; combout          ;
+; |V1|LessThan1~5 ; |V1|LessThan1~5           ; combout          ;
+; |V1|LessThan1~6 ; |V1|LessThan1~6           ; combout          ;
+; |V1|LessThan1~7 ; |V1|LessThan1~7           ; combout          ;
+; |V1|count~67    ; |V1|count~67              ; combout          ;
+; |V1|count~68    ; |V1|count~68              ; combout          ;
+; |V1|clk         ; |V1|clk~corein            ; combout          ;
+; |V1|led         ; |V1|led                   ; padio            ;
++-----------------+---------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------+
+; Missing 0-Value Coverage                                       ;
++-----------------+---------------------------+------------------+
+; Node Name       ; Output Port Name          ; Output Port Type ;
++-----------------+---------------------------+------------------+
+; |V1|led~reg0    ; |V1|led~reg0              ; regout           ;
+; |V1|count[30]   ; |V1|count[30]~1           ; cout             ;
+; |V1|count[24]   ; |V1|count[24]~3           ; cout0            ;
+; |V1|count[24]   ; |V1|count[24]~3COUT1_133  ; cout1            ;
+; |V1|count[23]   ; |V1|count[23]~5           ; cout0            ;
+; |V1|count[23]   ; |V1|count[23]~5COUT1_131  ; cout1            ;
+; |V1|count[25]   ; |V1|count[25]~7           ; cout             ;
+; |V1|count[26]   ; |V1|count[26]~9           ; cout0            ;
+; |V1|count[26]   ; |V1|count[26]~9COUT1_135  ; cout1            ;
+; |V1|led~0       ; |V1|led~0                 ; combout          ;
+; |V1|count[29]   ; |V1|count[29]~11          ; cout0            ;
+; |V1|count[29]   ; |V1|count[29]~11COUT1_141 ; cout1            ;
+; |V1|count[27]   ; |V1|count[27]~13          ; cout0            ;
+; |V1|count[27]   ; |V1|count[27]~13COUT1_137 ; cout1            ;
+; |V1|count[28]   ; |V1|count[28]~15          ; cout0            ;
+; |V1|count[28]   ; |V1|count[28]~15COUT1_139 ; cout1            ;
+; |V1|led~1       ; |V1|led~1                 ; combout          ;
+; |V1|count[21]   ; |V1|count[21]~17          ; cout0            ;
+; |V1|count[21]   ; |V1|count[21]~17COUT1_127 ; cout1            ;
+; |V1|count[22]   ; |V1|count[22]~19          ; cout0            ;
+; |V1|count[22]   ; |V1|count[22]~19COUT1_129 ; cout1            ;
+; |V1|count[19]   ; |V1|count[19]~21          ; cout0            ;
+; |V1|count[19]   ; |V1|count[19]~21COUT1_125 ; cout1            ;
+; |V1|count[20]   ; |V1|count[20]~23          ; cout             ;
+; |V1|count[16]   ; |V1|count[16]~25          ; cout0            ;
+; |V1|count[16]   ; |V1|count[16]~25COUT1_119 ; cout1            ;
+; |V1|count[17]   ; |V1|count[17]~27          ; cout0            ;
+; |V1|count[17]   ; |V1|count[17]~27COUT1_121 ; cout1            ;
+; |V1|count[18]   ; |V1|count[18]~29          ; cout0            ;
+; |V1|count[18]   ; |V1|count[18]~29COUT1_123 ; cout1            ;
+; |V1|LessThan1~0 ; |V1|LessThan1~0           ; combout          ;
+; |V1|count[12]   ; |V1|count[12]~31          ; cout0            ;
+; |V1|count[12]   ; |V1|count[12]~31COUT1_113 ; cout1            ;
+; |V1|count[9]    ; |V1|count[9]~33           ; cout0            ;
+; |V1|count[9]    ; |V1|count[9]~33COUT1_109  ; cout1            ;
+; |V1|count[10]   ; |V1|count[10]~35          ; cout             ;
+; |V1|count[7]    ; |V1|count[7]~37           ; cout0            ;
+; |V1|count[7]    ; |V1|count[7]~37COUT1_105  ; cout1            ;
+; |V1|count[8]    ; |V1|count[8]~39           ; cout0            ;
+; |V1|count[8]    ; |V1|count[8]~39COUT1_107  ; cout1            ;
+; |V1|LessThan0~0 ; |V1|LessThan0~0           ; combout          ;
+; |V1|count[11]   ; |V1|count[11]~41          ; cout0            ;
+; |V1|count[11]   ; |V1|count[11]~41COUT1_111 ; cout1            ;
+; |V1|count[13]   ; |V1|count[13]~43          ; cout0            ;
+; |V1|count[13]   ; |V1|count[13]~43COUT1_115 ; cout1            ;
+; |V1|count[14]   ; |V1|count[14]~45          ; cout0            ;
+; |V1|count[14]   ; |V1|count[14]~45COUT1_117 ; cout1            ;
+; |V1|LessThan1~1 ; |V1|LessThan1~1           ; combout          ;
+; |V1|LessThan0~1 ; |V1|LessThan0~1           ; combout          ;
+; |V1|count[15]   ; |V1|count[15]~47          ; cout             ;
+; |V1|LessThan0~2 ; |V1|LessThan0~2           ; combout          ;
+; |V1|LessThan0~3 ; |V1|LessThan0~3           ; combout          ;
+; |V1|LessThan0~4 ; |V1|LessThan0~4           ; combout          ;
+; |V1|count[31]   ; |V1|count[31]             ; regout           ;
+; |V1|led~2       ; |V1|led~2                 ; combout          ;
+; |V1|count~50    ; |V1|count~50              ; combout          ;
+; |V1|count~51    ; |V1|count~51              ; combout          ;
+; |V1|count~52    ; |V1|count~52              ; combout          ;
+; |V1|LessThan2~0 ; |V1|LessThan2~0           ; combout          ;
+; |V1|LessThan2~1 ; |V1|LessThan2~1           ; combout          ;
+; |V1|LessThan2~2 ; |V1|LessThan2~2           ; combout          ;
+; |V1|LessThan2~3 ; |V1|LessThan2~3           ; combout          ;
+; |V1|count[0]    ; |V1|count[0]~54           ; cout             ;
+; |V1|count[1]    ; |V1|count[1]~56           ; cout0            ;
+; |V1|count[1]    ; |V1|count[1]~56COUT1_95   ; cout1            ;
+; |V1|count[2]    ; |V1|count[2]~58           ; cout0            ;
+; |V1|count[2]    ; |V1|count[2]~58COUT1_97   ; cout1            ;
+; |V1|count[3]    ; |V1|count[3]~60           ; cout0            ;
+; |V1|count[3]    ; |V1|count[3]~60COUT1_99   ; cout1            ;
+; |V1|LessThan2~4 ; |V1|LessThan2~4           ; combout          ;
+; |V1|count[4]    ; |V1|count[4]~62           ; cout0            ;
+; |V1|count[4]    ; |V1|count[4]~62COUT1_101  ; cout1            ;
+; |V1|count[5]    ; |V1|count[5]~64           ; cout             ;
+; |V1|count[6]    ; |V1|count[6]~66           ; cout0            ;
+; |V1|count[6]    ; |V1|count[6]~66COUT1_103  ; cout1            ;
+; |V1|LessThan2~5 ; |V1|LessThan2~5           ; combout          ;
+; |V1|LessThan2~6 ; |V1|LessThan2~6           ; combout          ;
+; |V1|LessThan2~7 ; |V1|LessThan2~7           ; combout          ;
+; |V1|LessThan2~8 ; |V1|LessThan2~8           ; combout          ;
+; |V1|LessThan1~2 ; |V1|LessThan1~2           ; combout          ;
+; |V1|LessThan1~3 ; |V1|LessThan1~3           ; combout          ;
+; |V1|LessThan1~4 ; |V1|LessThan1~4           ; combout          ;
+; |V1|LessThan1~5 ; |V1|LessThan1~5           ; combout          ;
+; |V1|LessThan1~6 ; |V1|LessThan1~6           ; combout          ;
+; |V1|LessThan1~7 ; |V1|LessThan1~7           ; combout          ;
+; |V1|count~67    ; |V1|count~67              ; combout          ;
+; |V1|count~68    ; |V1|count~68              ; combout          ;
+; |V1|clk         ; |V1|clk~corein            ; combout          ;
+; |V1|led         ; |V1|led                   ; padio            ;
++-----------------+---------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Jul 12 17:41:10 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off V1 -c V1
+Info: Using vector source file "D:/EPM240/VERILOG/V1.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 0
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 134 megabytes
+    Info: Processing ended: Tue Jul 12 17:41:11 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

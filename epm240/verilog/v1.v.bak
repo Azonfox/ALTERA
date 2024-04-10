@@ -1,0 +1,36 @@
+module V1 ( input wire clk, output reg led);
+parameter PERIODLED=9999999;
+integer count=0;
+	always @ (posedge clk)	begin
+		if (count<=PERIODLED) begin                          
+			led<=0;
+			count=count+1;
+		  end                          
+		else if (count>=PERIODLED && count<=PERIODLED*2)
+		  begin
+			led<=1;
+			count=count+1;
+		  end else count=0;
+		end              
+endmodule
+
+// Quartus II Verilog Template
+// Binary counter
+
+module binary_counter
+#(parameter WIDTH=64)
+(
+	input clk, enable, reset,
+	output reg [WIDTH-1:0] count
+);
+
+	// Reset if needed, or increment if counting is enabled
+	always @ (posedge clk or posedge reset)
+	begin
+		if (reset)
+			count <= 0;
+		else if (enable == 1'b1)
+			count <= count + 1;
+	end
+
+endmodule

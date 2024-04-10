@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="MAX2">
+		<CBX_INST_ENTRY INSTANCE_NAME="|MAX2|ALTUFM_OSC:inst13" CBX_FILE_NAME="altufm_osc_b12.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

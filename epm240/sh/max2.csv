@@ -1,0 +1,121 @@
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# File: C:\altera\91sp2\quartus\MAX2.csv
+# Generated on: Tue Jun 14 23:33:46 2022
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved
+LED,Output,PIN_6,1,,,As output driving ground
+SET,Input,PIN_4,1,,,As input tri-stated
+X1,Input,PIN_2,1,,,As input tri-stated
+X2,Input,PIN_3,1,,,As input tri-stated
+,Unknown,PIN_5,1,,,
+,Unknown,PIN_7,1,,,
+,Unknown,PIN_8,1,,,
+,Unknown,PIN_9,1,,,
+,Unknown,PIN_10,,,,
+,Unknown,PIN_11,,,,
+,Unknown,PIN_12,1,,,
+,Unknown,PIN_13,,,,
+,Unknown,PIN_14,1,,,
+,Unknown,PIN_15,1,,,
+,Unknown,PIN_16,1,,,
+,Unknown,PIN_17,1,,,
+,Unknown,PIN_18,1,,,
+,Unknown,PIN_19,1,,,
+,Unknown,PIN_20,1,,,
+,Unknown,PIN_21,,,,
+,Unknown,PIN_22,,,,
+,Unknown,PIN_23,,,,
+,Unknown,PIN_24,1,,,
+,Unknown,PIN_25,1,,,
+,Unknown,PIN_26,1,,,
+,Unknown,PIN_27,1,,,
+,Unknown,PIN_28,1,,,
+,Unknown,PIN_29,1,,,
+,Unknown,PIN_30,1,,,
+,Unknown,PIN_31,1,,,
+,Unknown,PIN_32,,,,
+,Unknown,PIN_33,,,,
+,Unknown,PIN_34,,,,
+,Unknown,PIN_35,1,,,
+,Unknown,PIN_36,,,,
+,Unknown,PIN_37,1,,,
+,Unknown,PIN_38,1,,,
+,Unknown,PIN_39,1,,,
+,Unknown,PIN_40,1,,,
+,Unknown,PIN_41,1,,,
+,Unknown,PIN_42,1,,,
+,Unknown,PIN_43,1,,,
+,Unknown,PIN_44,,,,
+,Unknown,PIN_45,1,,,
+,Unknown,PIN_46,,,,
+,Unknown,PIN_47,1,,,
+,Unknown,PIN_48,,,,
+,Unknown,PIN_49,1,,,
+,Unknown,PIN_50,1,,,
+,Unknown,PIN_51,1,,,
+,Unknown,PIN_52,2,,,
+,Unknown,PIN_53,2,,,
+,Unknown,PIN_54,2,,,
+,Unknown,PIN_55,2,,,
+,Unknown,PIN_56,2,,,
+,Unknown,PIN_57,2,,,
+,Unknown,PIN_58,2,,,
+,Unknown,PIN_59,2,,,
+,Unknown,PIN_60,,,,
+,Unknown,PIN_61,2,,,
+,Unknown,PIN_62,2,,,
+,Unknown,PIN_63,,,,
+,Unknown,PIN_64,2,,,
+,Unknown,PIN_65,,,,
+,Unknown,PIN_66,,,,
+,Unknown,PIN_67,2,,,
+,Unknown,PIN_68,2,,,
+,Unknown,PIN_69,2,,,
+,Unknown,PIN_70,2,,,
+,Unknown,PIN_71,2,,,
+,Unknown,PIN_72,2,,,
+,Unknown,PIN_73,2,,,
+,Unknown,PIN_74,2,,,
+,Unknown,PIN_75,2,,,
+,Unknown,PIN_76,2,,,
+,Unknown,PIN_77,2,,,
+,Unknown,PIN_78,2,,,
+,Unknown,PIN_79,,,,
+,Unknown,PIN_80,,,,
+,Unknown,PIN_81,2,,,
+,Unknown,PIN_82,2,,,
+,Unknown,PIN_83,2,,,
+,Unknown,PIN_84,2,,,
+,Unknown,PIN_85,2,,,
+,Unknown,PIN_86,2,,,
+,Unknown,PIN_87,2,,,
+,Unknown,PIN_88,,,,
+,Unknown,PIN_89,,,,
+,Unknown,PIN_90,2,,,
+,Unknown,PIN_91,2,,,
+,Unknown,PIN_92,2,,,
+,Unknown,PIN_93,,,,
+,Unknown,PIN_94,2,,,
+,Unknown,PIN_95,2,,,
+,Unknown,PIN_96,2,,,
+,Unknown,PIN_97,2,,,
+,Unknown,PIN_98,2,,,
+,Unknown,PIN_99,,,,
+,Unknown,PIN_100,2,,,
+,Unknown,PIN_1,2,,,
