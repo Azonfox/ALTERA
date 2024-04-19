@@ -9,7 +9,7 @@ echo симуляция iVerilog VVP
 vvp qqq
 
 echo симуляция GTKWAVE 
-gtkwave out.vcd
+gtkwave --start=100 out.vcd
 
 echo
 echo ---END---
